@@ -2,7 +2,6 @@
 log
 tmp
 public/files
-config/database.yml
 public/javascripts/cache
 public/stylesheets/cache
 public/plugin_assets
