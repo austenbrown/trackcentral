@@ -1,0 +1,14 @@
+<%= f.error_messages %>
+
+<p>
+  <%= f.label :album_id %><br />
+  <%= f.collection_select :album_id, Album.all, :id, :title %>
+</p>
+<p>
+  <%= f.label :track_number %><br />
+  <%= f.select :track_number, 1..20 %>
+</p>
+<p>
+  <%= f.label :title %><br />
+  <%= f.text_field :title %>
+</p>

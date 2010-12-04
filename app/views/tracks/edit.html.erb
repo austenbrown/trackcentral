@@ -1,20 +1,7 @@
 <h1>Editing track</h1>
 
 <% form_for(@track) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :album_id %><br />
-    <%= f.text_field :album_id %>
-  </p>
-  <p>
-    <%= f.label :track_number %><br />
-    <%= f.text_field :track_number %>
-  </p>
+	<%= render :partial => "form", :locals => {:f  => f} %>
   <p>
     <%= f.submit 'Update' %>
   </p>
