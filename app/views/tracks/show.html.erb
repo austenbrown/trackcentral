@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @track.title %>
+</p>
+
+<p>
+  <b>Album:</b>
+  <%=h @track.album_id %>
+</p>
+
+<p>
+  <b>Track number:</b>
+  <%=h @track.track_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_track_path(@track) %> |
+<%= link_to 'Back', tracks_path %>
